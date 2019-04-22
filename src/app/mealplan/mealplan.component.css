@@ -1,0 +1,8 @@
+.example-card {
+    max-width: 800px;
+  }
+  
+.example-header-image {
+  background-image: url('https://cdn0.iconfinder.com/data/icons/kitchen-utensils-2/64/kitchen_utensil_icon_spoon_knife_fork_cutlery_tableware-512.png');
+  background-size: cover;
+}

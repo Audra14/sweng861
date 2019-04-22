@@ -1,0 +1,33 @@
+<div class="jumbotron" >
+    <h1>Start Meeting Your Health & Fitness Goals</h1>
+    <h2>Once a week, enter your weight to track your progress</h2>
+    <div style="width: 50%;">
+        <canvas
+            baseChart
+            [chartType] = "'line'"
+            [datasets] = "chartData"
+            [labels]="chartLabels"
+            [options] = "chartOptions"
+            [legend] = "true">
+        </canvas>
+    </div>
+    <form>
+        <div class="form-group" style="width: 20%;">
+            <label for="weightInput">Enter your current weight</label>
+            <input type="text" 
+            class="form-control" 
+            id="weightInput" 
+            name="weightInput"
+            [(ngModel)]="weightInput"
+            [value]='weightInput'>
+        </div>
+        <button type="submit" class="btn btn-success" (click)='setWeight(weightInput)'>Submit</button>
+    </form>
+    <div *ngIf="isSubmitted">
+        <p>Submitted<i class="fa fa-check" aria-hidden="true"></i></p>
+    </div>
+    
+</div>
+
+
+  

@@ -1,0 +1,8 @@
+img:hover{
+    -webkit-border-radius: 5px;
+    -moz-border-radius: 5px;
+    border-radius: 5px;
+    -webkit-box-shadow: 0px 0px 10px 0px rgba(93, 188, 210, 0.67);
+    -moz-box-shadow:    0px 0px 10px 0px rgba(93, 188, 210, 0.67);
+    box-shadow:         0px 0px 10px 0px rgba(93, 188, 210, 0.67);
+}
